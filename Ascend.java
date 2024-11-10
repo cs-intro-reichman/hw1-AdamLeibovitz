@@ -6,6 +6,8 @@ public class Ascend {
 		int b = (int) (Math.random()*100);
 		int c = (int) (Math.random()*100);
 		System.out.println(a+" "+b+" "+c);
-		System.out.println(Math.min()+" "+b+" "+c);
+		int min = Math.min(a,Math.min(c,b));
+		int max = Math.max(a,Math.max(c,b));
+		System.out.println(min+" "+(a+b+c-min-max)+" "+max);
 	}
 }
