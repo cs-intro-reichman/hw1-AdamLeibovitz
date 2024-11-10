@@ -17,8 +17,11 @@ public class TimeFormat {
 		String zero = "";
 		if (hours > 11) {
 			suffix = "PM";
-			euroHours = euroHours - 12;
+			if (hours > 12) {
+				euroHours = euroHours - 12;
+			}
 		}
+
 		if (minutes < 10) {
 			zero = "0";
 		}
